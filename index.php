@@ -1,5 +1,7 @@
 <?php include("homeheader.php"); ?>
 
+<? $activePage ?>
+
 <!--Main Slider-->
 <section class="main-slider">
 

@@ -28,6 +28,8 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
+    <?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
+
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -54,7 +56,7 @@
                         </div>
 
                         <!--Nav Outer-->
-                        <div class="nav-outer clearfix">
+                        <div class="nav-outer clearfix" style="padding-top:18px;">
 
                             <!-- Main Menu -->
                             <nav class="main-menu navbar-expand-md">
@@ -71,13 +73,16 @@
 
                                 <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="index.php">Home</a>
+                                        <li class="<?= ($activePage == 'index') ? 'current':''; ?>"><a href="index.php">Home</a>
                                         </li>
-                                        <li><a href="about.php">About Us</a>
-                                        </li>
-                                        <li><a href="products.php">Products</a></li>
-                                        <li><a href="enquiry.php">Enquiry</a></li>
-                                        <li><a href="contact.php">Contact us</a></li>
+                                        <li class="<?= ($activePage == 'about') ? 'current':''; ?>"><a
+                                                href="about.php">About Us</a></li>
+                                        <li class="<?= ($activePage == 'products') ? 'current':''; ?>"><a
+                                                href="products.php">Products</a></li>
+                                        <li class="<?= ($activePage == 'enquiry') ? 'current':''; ?>"><a
+                                                href="enquiry.php">Enquiry</a></li>
+                                        <li class="<?= ($activePage == 'contact') ? 'current':''; ?>"><a
+                                                href="contact.php">Contact us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -112,13 +117,16 @@
 
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                                 <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="index.php">Home</a>
+                                    <li class="<?= ($activePage == 'index') ? 'current':''; ?>"><a href="index.php">Home</a>
                                     </li>
-                                    <li><a href="about.php">About Us</a>
-                                    </li>
-                                    <li><a href="products.php">Products</a></li>
-                                    <li><a href="enquiry.php">Enquiry</a></li>
-                                    <li><a href="contact.php">Contact us</a></li>
+                                    <li class="<?= ($activePage == 'about') ? 'current':''; ?>"><a
+                                            href="about.php">About Us</a></li>
+                                    <li class="<?= ($activePage == 'products') ? 'current':''; ?>"><a
+                                            href="products.php">Products</a></li>
+                                    <li class="<?= ($activePage == 'enquiry') ? 'current':''; ?>"><a
+                                            href="enquiry.php">Enquiry</a></li>
+                                    <li class="<?= ($activePage == 'contact') ? 'current':''; ?>"><a
+                                            href="contact.php">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav><!-- Main Menu End-->

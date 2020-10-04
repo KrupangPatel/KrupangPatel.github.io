@@ -1,13 +1,23 @@
 <?php include("header.php"); ?>
 
+<section class="page-title" style="background-image:url(images/background/9.jpg)">
+    	<div class="auto-container">
+        	<h1>Enquiry</h1>
+            <ul class="page-breadcrumb">
+            	<li><a href="index.php">Home</a></li>
+                <li>Enquiry</li>
+            </ul>
+        </div>
+    </section>
+
 <section class="contact-section">
     <div class="auto-container">
         <div class="sec-title">
-            <h2>Inquiry</h2>
-            <div class="separater"></div>
+            <h2 class="text-center text-xs-left">Have an enquiry? Ask us now...</h2>
+            <div class="separater" style="width:100%;"></div>
         </div>
-        <div class="row clearfix">
-            <div class="form-column col-lg-12 col-md-12 col-sm-12">
+        <div class="row justify-content-center">
+            <div class="login-div form-column col-lg-8 col-md-10 col-sm-12">
                 <div class="inner-column">
 
                     <!-- Default Form -->
@@ -16,62 +26,62 @@
                         <form method="post" action="sendmail.php" id="contact-form">
                             <div class="row clearfix">
 
-                                <div class="col-lg-3 col-md-3 col-sm-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="company" class="text-center control-label">Company :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="text" name="company" placeholder="Company Name" required>
                                 </div>
 
-                                <div class="col-lg-3 col-md-3 col-sm-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="contactName" class="text-center control-label">Contactee Name
                                         :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="text" name="contactName" placeholder="Contactee Name" required>
                                 </div>
 
-                                <div class="col-lg-3 col-md-3 col-sm-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="email" class="text-center control-label">Email :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="email" name="email" placeholder="Enter Email" required>
                                 </div>
 
-                                <div class="col-lg-3 col-md-3 col-sm-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="phone" class="text-center control-label">Contact :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="text" name="phone" placeholder="Enter Phone">
                                 </div>
 
-                                <div class="col-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="company" class="text-center control-label">Address :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="text" name="address" placeholder="Address">
                                 </div>
 
-                                <div class="col-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="company" class="text-center control-label">City :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="text" name="city" placeholder="City">
                                 </div>
 
-                                <div class="col-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="company" class="text-center control-label">Country :</label>
                                 </div>
 
 
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <select id="country" name="country" style="height: 50px;" class="form-control">
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Åland Islands">Åland Islands</option>
@@ -347,11 +357,11 @@
                                         <option value="Zimbabwe">Zimbabwe</option>
                                     </select>
                                 </div>
-                                <div class="col-3 form-group">
+                                <div class="col-4 form-group">
                                     <label for="pin" class="text-center control-label">PIN / ZIP code :</label>
                                 </div>
 
-                                <div class="col-lg-9 col-md-9 col-sm-9 form-group">
+                                <div class="col-8 form-group">
                                     <input type="text" name="pin" placeholder="PinCode">
                                 </div>
 
@@ -360,7 +370,7 @@
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send
+                                    <button class="theme-btn float-right btn-style-one" type="submit" name="submit-form">Send
                                         Now</button>
                                 </div>
 
